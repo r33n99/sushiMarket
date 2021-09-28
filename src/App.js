@@ -75,7 +75,7 @@ function App() {
         prev.filter((item) => Number(item.id) !== Number(id))
       );
     } catch (error) {
-      alert("не удалось эдемент из корзины")
+      alert("не удалось загрузить элемент из корзины")
     }
   };
 
@@ -133,7 +133,7 @@ function App() {
       }}
     >
       <div className="wrapper clear">
-        <Overlay opened={cartIsOpen} removeItemOnCart={removeItemOnCart} />
+        <Overlay cartItems={cartItems} onClose={() => setCartIsOpen(false)}  opened={cartIsOpen} removeItemOnCart={removeItemOnCart} />
         <Header />
 
         <Route path="/favorite">
