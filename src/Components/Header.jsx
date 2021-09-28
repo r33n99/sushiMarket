@@ -21,7 +21,7 @@ const Header = () => {
         <ul className="d-flex align-center">
           <li style={{cursor:"pointer"}} className="d-flex mr-10" onClick={() => overStyle("hidden",true)}>
             <img width={18} height={18} src="/img/Group.svg" alt="cart" />
-            <span>{totalPrice} руб.</span>
+            <span>{totalPrice} сом.</span>
           </li>
           <li>
             <Link to="/favorite">
