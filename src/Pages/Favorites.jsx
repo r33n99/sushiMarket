@@ -9,7 +9,7 @@ const Favorites = () => {
     return (
         <div className="content p-40">
         <div className="d-flex align-center mb-40 justify-between">
-          <h1>Избранные кроссовки</h1>
+          <h1>Избранные суши</h1>
           <div className="search-block d-flex">
           </div>
         </div>
