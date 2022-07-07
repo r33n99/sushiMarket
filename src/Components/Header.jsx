@@ -18,7 +18,7 @@ const Header = () => {
           </div>
         </div>
         </Link>
-        <ul className="d-flex align-center">
+        <ul className="nav-panel d-flex align-center">
           <li style={{cursor:"pointer"}} className="d-flex mr-10" onClick={() => overStyle("hidden",true)}>
             <img width={18} height={18} src="/img/Group.svg" alt="cart" />
             <span>{totalPrice} сом.</span>

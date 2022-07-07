@@ -26,6 +26,15 @@ background-color: rgba(255, 255, 255, 0.7);
 
 header {
   border-bottom: 1px solid #EAEAEA;
+  @media screen and (max-width: 768px) {
+   display: flex;
+   flex-direction: column;
+  }
+  .nav-panel {
+    @media screen and (max-width: 768px) {
+      margin-top: 20px;
+    }
+  }
   img {
     margin-right: 15px;
   }
@@ -36,7 +45,7 @@ h3,p {
 
 .content {
   h1 {
-    margin: 0;
+    margin: 0 auto;
   }
 
   .collection {
@@ -87,6 +96,9 @@ cursor: pointer;
 
 .cart {
   margin: 80px;
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+  }
 }
               
 .arrow {
@@ -127,6 +139,7 @@ cursor: pointer;
       transition: transform 0.15s ease-in-out;
     }
     .back {
+      z-index: 999;
       position: absolute;
       left: 10px;
       transition: transform 0.15s ease-in-out;

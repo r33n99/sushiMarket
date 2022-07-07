@@ -27,7 +27,7 @@ const Home = ({isLoading,searchValue,OnChangeSearchItem,setsearchValue,items,fav
     return (
         <div className="content p-40">
         <div className="d-flex align-center mb-40 justify-between">
-          <h1>{searchValue ? `Поиск по "${searchValue}"` : "Меню"}</h1>
+          <h1 style={{textAlign:"center"}}>{searchValue ? `Поиск по "${searchValue}"` : "Меню"}</h1>
           <div className="search-block d-flex">
             <img src="/img/lupa.svg" alt="search" />
             <input
